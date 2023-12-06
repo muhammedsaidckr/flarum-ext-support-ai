@@ -1,8 +1,8 @@
 <?php
 
-namespace Blomstra\SupportAi\Agent;
+namespace MSC\SupportAi\Agent;
 
-use Blomstra\SupportAi\Event\Replying;
+use MSC\SupportAi\Event\Replying;
 use Flarum\Post\Post;
 
 class Reply extends Action

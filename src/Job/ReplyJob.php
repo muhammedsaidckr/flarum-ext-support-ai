@@ -1,8 +1,8 @@
 <?php
 
-namespace Blomstra\SupportAi\Job;
+namespace MSC\SupportAi\Job;
 
-use Blomstra\SupportAi\Agent;
+use MSC\SupportAi\Agent;
 use Flarum\Post\Post;
 use Flarum\Queue\AbstractJob;
 use Illuminate\Queue\Middleware\WithoutOverlapping;
@@ -25,7 +25,7 @@ class ReplyJob extends AbstractJob
         $id = $this->post->id;
 
         return [
-            new WithoutOverlapping("blomstra-support-ai.is-replying-to-post-id.$id")
+            new WithoutOverlapping("msc-support-ai.is-replying-to-post-id.$id")
         ];
     }
 }

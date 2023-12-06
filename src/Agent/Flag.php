@@ -1,8 +1,8 @@
 <?php
 
-namespace Blomstra\SupportAi\Agent;
+namespace MSC\SupportAi\Agent;
 
-use Blomstra\SupportAi\Event\Flagging;
+use MSC\SupportAi\Event\Flagging;
 use Carbon\Carbon;
 use Flarum\Flags\Event\Created;
 use Flarum\Flags\Flag as FlagPost;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Blomstra\SupportAi;
+namespace MSC\SupportAi;
 
-use Blomstra\SupportAi\Agent\Action;
-use Blomstra\SupportAi\Agent\Training;
-use Blomstra\SupportAi\Message\Factory;
+use MSC\SupportAi\Agent\Action;
+use MSC\SupportAi\Agent\Training;
+use MSC\SupportAi\Message\Factory;
 use Flarum\Foundation\AbstractServiceProvider;
 use Illuminate\Contracts\Events\Dispatcher;
 

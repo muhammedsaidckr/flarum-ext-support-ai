@@ -1,9 +1,9 @@
 <?php
 
-namespace Blomstra\SupportAi\Listen;
+namespace MSC\SupportAi\Listen;
 
-use Blomstra\SupportAi\Agent;
-use Blomstra\SupportAi\Job\ReplyJob;
+use MSC\SupportAi\Agent;
+use MSC\SupportAi\Job\ReplyJob;
 use Flarum\Post\Event\Posted;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Contracts\Queue\Queue;

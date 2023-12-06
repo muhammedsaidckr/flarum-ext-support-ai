@@ -1,6 +1,6 @@
 <?php
 
-namespace Blomstra\SupportAi;
+namespace MSC\SupportAi;
 
 use Flarum\Extend as Flarum;
 
@@ -18,5 +18,7 @@ return [
 
     (new Flarum\Console)->command(Console\TrainAgentCommand::class),
 
-    (new Flarum\Settings())->default('blomstra-support-ai.model', 'gpt-3.5-turbo'),
+    (new Flarum\Settings())->default('msc-support-ai.model', 'gpt-3.5-turbo-instruct')
+        ->serializeToForum('msc-support-ai.user_prompt_id', 'msc-support-ai.user_prompt')
+        ->serializeToForum('msc-support-ai.user_prompt_badge_text', 'msc-support-ai.user_prompt_badge_text'),
 ];

@@ -1,11 +1,11 @@
 <?php
 
-namespace Blomstra\SupportAi;
+namespace MSC\SupportAi;
 
-use Blomstra\SupportAi\Agent\Flag;
-use Blomstra\SupportAi\Agent\Model;
-use Blomstra\SupportAi\Agent\Reply;
-use Blomstra\SupportAi\Message\Factory as Message;
+use MSC\SupportAi\Agent\Flag;
+use MSC\SupportAi\Agent\Model;
+use MSC\SupportAi\Agent\Reply;
+use MSC\SupportAi\Message\Factory as Message;
 use Flarum\Post\CommentPost;
 use Flarum\Post\Post;
 use Flarum\User\User;
@@ -54,7 +54,7 @@ class Agent
         }
 
         $response = $this->client->chat()->create([
-            'model' => 'gpt-3.5-turbo',
+            'model' => 'gpt-3.5-turbo-instruct',
             'messages' => $messages,
             'user' => "user-$post->user_id"
         ]);

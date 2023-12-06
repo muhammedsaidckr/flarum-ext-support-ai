@@ -1,6 +1,6 @@
 <?php
 
-namespace Blomstra\SupportAi;
+namespace MSC\SupportAi;
 
 use Flarum\Extension\ExtensionManager;
 use Flarum\Foundation\AbstractServiceProvider;
@@ -16,8 +16,8 @@ class ClientProvider extends AbstractServiceProvider
         /** @var SettingsRepositoryInterface $settings */
         $settings = $this->container->make(SettingsRepositoryInterface::class);
 
-        $apiKey = $settings->get('blomstra-support-ai.openai-api-key');
-        $organisation = $settings->get('blomstra-support-ai.openai-api-organisation');
+        $apiKey = $settings->get('msc-support-ai.openai-api-key');
+        $organisation = $settings->get('msc-support-ai.openai-api-organisation');
 
         if ($apiKey) {
             $this->container->singleton(Client::class, fn () => OpenAI::client($apiKey, $organisation));
@@ -31,7 +31,7 @@ class ClientProvider extends AbstractServiceProvider
 
     protected function getAgent(SettingsRepositoryInterface $settings, ExtensionManager $extensions): Agent
     {
-        $username = $settings->get('blomstra-support-ai.username') ?? 'admin';
+        $username = $settings->get('msc-support-ai.username') ?? 'admin';
 
         /** @var UserRepository $users */
         $users = $this->container->make(UserRepository::class);
@@ -44,10 +44,10 @@ class ClientProvider extends AbstractServiceProvider
 
         $agent = new Agent(
             user: $user,
-            persona: $settings->get('blomstra-support-ai.persona'),
-            moderatingBehaviour: $settings->get('blomstra-support-ai.how-to-moderate'),
+            persona: $settings->get('msc-support-ai.persona'),
+            moderatingBehaviour: $settings->get('msc-support-ai.how-to-moderate'),
             client: $client,
-            model: $settings->get('blomstra-support-ai.model')
+            model: $settings->get('msc-support-ai.model')
         );
 
         $agent->toggleMentioning($extensions->isEnabled('flarum-mentions'));

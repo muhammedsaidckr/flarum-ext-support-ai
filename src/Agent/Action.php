@@ -1,8 +1,8 @@
 <?php
 
-namespace Blomstra\SupportAi\Agent;
+namespace MSC\SupportAi\Agent;
 
-use Blomstra\SupportAi\Agent;
+use MSC\SupportAi\Agent;
 use Illuminate\Contracts\Events\Dispatcher;
 
 abstract class Action

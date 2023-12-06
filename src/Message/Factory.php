@@ -1,9 +1,9 @@
 <?php
 
-namespace Blomstra\SupportAi\Message;
+namespace MSC\SupportAi\Message;
 
-use Blomstra\SupportAi\Agent;
-use Blomstra\SupportAi\Agent\Role;
+use MSC\SupportAi\Agent;
+use MSC\SupportAi\Agent\Role;
 use Flarum\Post\CommentPost;
 use Flarum\Post\Post;
 use Flarum\User\Guest;

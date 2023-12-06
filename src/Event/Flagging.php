@@ -1,8 +1,8 @@
 <?php
 
-namespace Blomstra\SupportAi\Event;
+namespace MSC\SupportAi\Event;
 
-use Blomstra\SupportAi\Agent\Flag;
+use MSC\SupportAi\Agent\Flag;
 
 class Flagging
 {

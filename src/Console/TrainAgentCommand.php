@@ -1,15 +1,15 @@
 <?php
 
-namespace Blomstra\SupportAi\Console;
+namespace MSC\SupportAi\Console;
 
-use Blomstra\SupportAi\Agent;
+use MSC\SupportAi\Agent;
 use Illuminate\Console\Command;
 use Illuminate\Container\Container;
 use OpenAI\Client;
 
 class TrainAgentCommand extends Command
 {
-    protected $signature = 'blomstra:support-ai:feed-agent';
+    protected $signature = 'msc:support-ai:feed-agent';
     protected $description = 'Feeds the agent with your most valuable content.';
 
     public function handle(Agent $agent, Container $container, Agent\Training $training)

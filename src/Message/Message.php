@@ -1,8 +1,8 @@
 <?php
 
-namespace Blomstra\SupportAi\Message;
+namespace MSC\SupportAi\Message;
 
-use Blomstra\SupportAi\Agent\Role;
+use MSC\SupportAi\Agent\Role;
 use Illuminate\Contracts\Support\Arrayable;
 
 class Message implements Arrayable

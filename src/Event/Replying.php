@@ -1,8 +1,8 @@
 <?php
 
-namespace Blomstra\SupportAi\Event;
+namespace MSC\SupportAi\Event;
 
-use Blomstra\SupportAi\Agent\Reply;
+use MSC\SupportAi\Agent\Reply;
 
 class Replying
 {

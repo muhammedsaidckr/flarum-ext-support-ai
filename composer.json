@@ -5,7 +5,7 @@
     "keywords": [
         "extension",
         "flarum",
-        "blomstra",
+        "msc",
         "support",
         "ai",
         "gpt",
@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Blomstra\\SupportAi\\": "src/"
+            "MSC\\SupportAi\\": "src/"
         }
     },
     "require-dev": {
@@ -36,7 +36,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Blomstra\\SupportAi\\Tests\\": "tests/"
+            "MSC\\SupportAi\\Tests\\": "tests/"
         }
     },
     "extra": {

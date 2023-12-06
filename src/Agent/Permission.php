@@ -1,6 +1,6 @@
 <?php
 
-namespace Blomstra\SupportAi\Agent;
+namespace MSC\SupportAi\Agent;
 
 use Flarum\Discussion\Discussion;
 use Flarum\User\User;
