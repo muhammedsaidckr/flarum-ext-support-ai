@@ -5,6 +5,9 @@ namespace MSC\SupportAi;
 use Flarum\Extend as Flarum;
 
 return [
+    (new Flarum\Frontend('forum'))
+        ->js(__DIR__.'/js/dist/forum.js'),
+
     (new Flarum\Frontend('admin'))
         ->js(__DIR__.'/js/dist/admin.js'),
 
