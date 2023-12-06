@@ -25,7 +25,7 @@ class ReplyJob extends AbstractJob
         $id = $this->post->id;
 
         return [
-            new WithoutOverlapping("msc-support-ai.is-replying-to-post-id.$id")
+            new WithoutOverlapping("muhammedsaidckr/support-ai.is-replying-to-post-id.$id")
         ];
     }
 }

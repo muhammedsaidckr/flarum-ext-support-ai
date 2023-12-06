@@ -1,18 +1,18 @@
 import app from 'flarum/admin/app';
 import ChatGptSettings from "./components/ChatGptSettings";
 
-app.initializers.add('msc-support-ai', () => {
+app.initializers.add('muhammedsaidckr/support-ai', () => {
 
     app.extensionData
-        .for('msc-support-ai')
+        .for('muhammedsaidckr/support-ai')
         .registerSetting({
-            setting: 'msc-support-ai.openai-api-key',
-            label: app.translator.trans('msc-support-ai.admin.setting.api-key'),
+            setting: 'muhammedsaidckr/support-ai.openai-api-key',
+            label: app.translator.trans('muhammedsaidckr/support-ai.admin.setting.api-key'),
             type: 'input',
         })
         .registerSetting({
-            setting: 'msc-support-ai.model',
-            label: app.translator.trans('msc-support-ai.admin.setting.model'),
+            setting: 'muhammedsaidckr/support-ai.model',
+            label: app.translator.trans('muhammedsaidckr/support-ai.admin.setting.model'),
             type: 'select',
             options: {
                 'gpt-4': 'GPT-4',
@@ -20,39 +20,39 @@ app.initializers.add('msc-support-ai', () => {
             }
         })
         .registerSetting({
-            setting: 'msc-support-ai.openai-api-organisation',
-            label: app.translator.trans('msc-support-ai.admin.setting.api-organisation'),
+            setting: 'muhammedsaidckr/support-ai.openai-api-organisation',
+            label: app.translator.trans('muhammedsaidckr/support-ai.admin.setting.api-organisation'),
             type: 'input',
         })
         .registerSetting({
-            setting: 'msc-support-ai.username',
-            label: app.translator.trans('msc-support-ai.admin.setting.username'),
+            setting: 'muhammedsaidckr/support-ai.username',
+            label: app.translator.trans('muhammedsaidckr/support-ai.admin.setting.username'),
             type: 'input',
         })
         .registerSetting({
-            setting: 'msc-support-ai.persona',
-            label: app.translator.trans('msc-support-ai.admin.setting.persona'),
+            setting: 'muhammedsaidckr/support-ai.persona',
+            label: app.translator.trans('muhammedsaidckr/support-ai.admin.setting.persona'),
             type: 'textarea',
         })
         .registerSetting({
-            setting: 'msc-support-ai.how-to-moderate',
-            label: app.translator.trans('msc-support-ai.admin.setting.how-to-moderate'),
+            setting: 'muhammedsaidckr/support-ai.how-to-moderate',
+            label: app.translator.trans('muhammedsaidckr/support-ai.admin.setting.how-to-moderate'),
             type: 'textarea',
         })
 
         .registerPermission({
             permission: 'discussion.supportAiRespondToOp',
-            label: app.translator.trans('msc-support-ai.admin.permission.respond-to-op'),
+            label: app.translator.trans('muhammedsaidckr/support-ai.admin.permission.respond-to-op'),
             icon: 'fas fa-robot',
         }, 'reply')
         .registerPermission({
             permission: 'discussion.supportAiRespondToReplies',
-            label: app.translator.trans('msc-support-ai.admin.permission.respond-to-replies'),
+            label: app.translator.trans('muhammedsaidckr/support-ai.admin.permission.respond-to-replies'),
             icon: 'fas fa-robot',
         }, 'reply')
         .registerPermission({
             permission: 'discussion.supportAiRespondToMentions',
-            label: app.translator.trans('msc-support-ai.admin.permission.respond-to-mentions'),
+            label: app.translator.trans('muhammedsaidckr/support-ai.admin.permission.respond-to-mentions'),
             icon: 'fas fa-robot',
         }, 'reply')
         .registerPage(ChatGptSettings);
