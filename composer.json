@@ -44,11 +44,25 @@
             "title": "Support AI",
             "category": "feature",
             "icon": {
-                "image": "resources/assets/logo.png",
-                "backgroundColor": "#E3E7F1",
-                "backgroundSize": "60%",
-                "backgroundRepeat": "no-repeat",
-                "backgroundPosition": "center"
+                "image": "resources/assets/icon.svg"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": false,
+                "prettier": true,
+                "typescript": true,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": false
             }
         },
         "extiverse": {
