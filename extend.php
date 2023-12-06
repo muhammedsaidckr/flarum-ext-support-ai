@@ -18,7 +18,11 @@ return [
 
     (new Flarum\Console)->command(Console\TrainAgentCommand::class),
 
-    (new Flarum\Settings())->default('msc-support-ai.model', 'gpt-3.5-turbo-instruct')
-        ->serializeToForum('msc-support-ai.user_prompt_id', 'msc-support-ai.user_prompt')
-        ->serializeToForum('msc-support-ai.user_prompt_badge_text', 'msc-support-ai.user_prompt_badge_text'),
+    (new Flarum\Settings())
+        ->default('msc-support-ai.model', 'gpt-3.5-turbo-instruct')
+        ->default('msc-support-ai.model.enable_on_discussion_started', true)
+        ->default('msc-support-ai.model.max_tokens', 100)
+        ->default('msc-support-ai.model.user_prompt_badge_text', 'Assistant')
+        ->serializeToForum('chatGptUserPromptId', 'msc-support-ai.model.user_prompt')
+        ->serializeToForum('chatGptBadgeText', 'msc-support-ai.model.user_prompt_badge_text'),
 ];
