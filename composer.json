@@ -1,5 +1,5 @@
 {
-    "name": "blomstra/support-ai",
+    "name": "muhammedsaidckr/support-ai",
     "description": "The intelligent support a(i)gent for your Flarum community.",
     "keywords": [
         "extension",
@@ -14,9 +14,9 @@
     "type": "flarum-extension",
     "authors": [
         {
-            "name": "Daniël Klabbers",
-            "email": "daniel@klabbers.email",
-            "homepage": "https://luceos.com"
+            "name": "Muhammed Said Çakır",
+            "email": "muhammedsaidckr@gmail.com",
+            "homepage": "https://mscakir.dev"
         }
     ],
     "require": {

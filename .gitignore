@@ -3,3 +3,4 @@ js/dist
 vendor/
 .phpunit.cache
 composer.lock
+.idea
