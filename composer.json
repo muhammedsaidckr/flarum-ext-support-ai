@@ -1,6 +1,7 @@
 {
     "name": "muhammedsaidckr/support-ai",
     "description": "The intelligent support a(i)gent for your Flarum community.",
+    "version": "0.1.0",
     "keywords": [
         "extension",
         "flarum",
@@ -53,5 +54,7 @@
         "extiverse": {
             "discuss": ""
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
